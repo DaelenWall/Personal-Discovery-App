@@ -1,0 +1,109 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.device-status {
+  margin: 16px 0;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.device-status details {
+  margin-top: 4px;
+}
+.device-status p {
+  max-width: 65ch;
+}
+@media (max-width: 700px), (pointer: coarse) {
+  .app-shell {
+    padding: env(safe-area-inset-top) max(20px, env(safe-area-inset-right))
+      calc(78px + env(safe-area-inset-bottom))
+      max(20px, env(safe-area-inset-left));
+  }
+  body {
+    min-height: 100svh;
+  }
+  .site-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .site-header nav {
+    position: fixed;
+    z-index: 20;
+    inset: auto 0 0;
+    width: 100%;
+    margin: 0;
+    padding: 6px max(8px, env(safe-area-inset-right))
+      calc(6px + env(safe-area-inset-bottom))
+      max(8px, env(safe-area-inset-left));
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    gap: 2px;
+    justify-content: space-around;
+  }
+  .site-header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 44px;
+    padding: 6px 2px;
+    font-size: 11px;
+    text-align: center;
+  }
+  :root[data-keyboard="open"] .site-header nav {
+    display: none;
+  }
+  button,
+  .button,
+  summary {
+    min-height: 44px;
+  }
+  .text-button,
+  .text-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .time-reminder button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+  input[type="file"] {
+    min-width: 0;
+  }
+  .card-actions button,
+  .depth-actions button,
+  .depth-actions .button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .session-progress > div {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .card-meta {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .source-line,
+  .library-card,
+  .deep-header,
+  .source-text {
+    overflow-wrap: anywhere;
+  }
+  .home-intro h1 {
+    font-size: clamp(38px, 12.2vw, 49px);
+  }
+}

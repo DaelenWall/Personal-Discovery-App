@@ -1,0 +1,9 @@
+node_modules
+.next
+/data
+package-lock.json
+next-env.d.ts
+PERSONAL_DISCOVERY_APP_SPEC.md
+CODEX_KICKOFF_PROMPT.txt
+test-results
+playwright-report
